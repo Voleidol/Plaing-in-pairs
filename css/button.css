@@ -1,0 +1,13 @@
+.btn-success {
+    border-color: black;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.btn-primary {
+    border-color: black;
+}
+
+.btn-danger, .btn-lg {
+    font-size: 2.25rem;
+    border: 2px solid black;
+}

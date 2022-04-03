@@ -1,0 +1,95 @@
+.abz, .seconds, .result {
+    font-size: 8rem;
+    font-weight: bolder;
+    color: rgb(255, 160, 255);
+    font-family: 'M PLUS Code Latin', sans-serif;
+    border-bottom: 2px solid rgb(255, 160, 255);
+}
+
+.dropdown-menu {
+    min-width: 22rem;
+    max-width: 22rem;
+    font-size: 2rem;
+}
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: white;
+} 
+
+.cards-active {
+    margin: 20px 50px;
+    border-radius: 50px;
+    background-color: rgb(250, 207, 116);
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.inner-border {
+    border: 20px solid #ffffff;
+    box-shadow: inset 0px 0px 0px 10px #550fff;
+    box-sizing: border-box; /* Включаем отступ и границу в ширину и высоту элемента */    
+}
+
+.cards-back {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(187, 255, 187);
+    background-image: url(../img/back_face/back.svg)!important;
+    background-size: cover;
+    margin: 20px 50px;
+    border-radius: 50px;
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+.wrap {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.menu-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.start-menu {
+    margin-top: 30px;
+}
+
+.timer {
+    text-align: center;
+}
+
+@media (max-width:1280px) {
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 760px){
+    #cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}

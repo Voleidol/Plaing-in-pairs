@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing in pairs</title>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/back.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/turn.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu-flex">
+            <h1 class="abz">Playing pairs</h1>
+            <div class="start-menu">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger btn-lg btn-number">Number of cards</button>
+                    <button type="button" class="btn btn-danger btn-menu dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                    </button>                  
+                        <!-- show - чтоб показать выпадающее меню -->
+                        <!-- active - чтоб сделать активным строчку -->
+                    <div class="menu dropdown-menu"> 
+                        <a class="dropdown-item" href="#">6</a>
+                        <a class="dropdown-item" href="#">8</a>
+                        <a class="dropdown-item" href="#">10</a>
+                        <a class="dropdown-item" href="#">12</a>
+                        <a class="dropdown-item" href="#">14</a>
+                        <a class="dropdown-item" href="#">16</a>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-ok">Ok</button>
+            </div>
+            <button type="button" class="btn btn-success btn-mix">Mix</button>
+            <div class="timer">
+                <div class="seconds"></div>
+                <div class="result">win</div>
+            </div>
+        </div>     
+        <div id="cards" class="cards">
+            
+        </div>
+    </div>
+     
+    <script src="js/play.js"></script>
+</body>
+</html>
